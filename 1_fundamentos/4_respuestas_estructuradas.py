@@ -37,7 +37,7 @@ chain = (
 )
 
 # 6️⃣ Ejecutar
-texto = "Hola, me llamo Carlos, tengo 25 años y vivo en Medellín."
+texto = "Hola, me llamo Carlos, tengo 25 años y vivo en Colombia."
 
 resultado = chain.invoke({
     "input": texto,

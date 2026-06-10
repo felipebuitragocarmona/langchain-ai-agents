@@ -72,8 +72,8 @@ Desde la raíz del proyecto:
 
 ```bash
 python 1_fundamentos/2_2_hola_mundo.py
-python 1_fundamentos/3_chain_con_memoria.py
-python 1_fundamentos/4_rag_basico.py
+python 1_fundamentos/6_chain_con_memoria.py
+python 1_fundamentos/5_rag_basico.py
 python 1_fundamentos/3_a_agente_calculador.py
 ```
 
