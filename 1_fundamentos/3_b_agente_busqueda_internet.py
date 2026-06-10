@@ -61,9 +61,10 @@ def agente_con_busqueda(pregunta: str):
 
 # 4️⃣ Probar con diferentes preguntas
 preguntas = [
-    "¿Cuál es el precio actual del dólar en Colombia?",
-    "¿Qué pasó hoy en las noticias de tecnología?",
-    "¿Quién ganó el último partido de la selección Colombia?"
+    "cual es el clima en manizales colombia para hoy y probabilidad de lluvia? en grados centigrados"
+    #"¿Cuál es el precio actual del dólar en Colombia?",
+    #"¿Qué pasó hoy en las noticias de tecnología?",
+    #"¿Quién ganó el último partido de la selección Colombia?"
 ]
 
 for pregunta in preguntas:
