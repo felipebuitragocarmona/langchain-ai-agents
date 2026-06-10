@@ -2,8 +2,12 @@
 /documentacion_oficial/
 /mcps/
 /pagina_oficial/
+# Mantener carpeta credenciales en el repo, pero no su contenido
+/credenciales/*
+!/credenciales/.gitkeep
 .env
 venv
+
 
 # Created by https://www.toptal.com/developers/gitignore/api/python,windows,pycharm+all
 # Edit at https://www.toptal.com/developers/gitignore?templates=python,windows,pycharm+all

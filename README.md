@@ -54,6 +54,7 @@ Ejemplo mínimo:
 
 ```env
 GOOGLE_API_KEY=tu_api_key_aqui
+GOOGLE_SHEETS_CREDENTIALS_FILE=credenciales/credentials_google_sheet.json
 ```
 
 Ejemplo extendido (si pruebas más proveedores/herramientas):
@@ -65,6 +66,32 @@ TAVILY_API_KEY=tu_tavily_api_key_opcional
 ```
 
 Nota: no subas tu archivo .env al repositorio.
+
+## Credenciales de Google Sheets
+
+La carpeta credenciales se versiona para que exista en el repositorio remoto, pero su contenido se ignora en Git.
+
+Estructura recomendada:
+
+```text
+credenciales/
+	.gitkeep
+	credentials_google_sheet.json   # local, no versionado
+```
+
+Pasos:
+
+1. Descarga tu JSON de Service Account desde Google Cloud.
+2. Guárdalo como credenciales/credentials_google_sheet.json.
+3. Asegura que GOOGLE_SHEETS_CREDENTIALS_FILE apunte a ese archivo en el .env.
+4. Comparte la hoja de cálculo con el email de la Service Account.
+
+Si ya subiste credenciales por error, quítalas del índice sin borrar tus archivos locales:
+
+```bash
+git rm -r --cached credenciales/*.json
+git commit -m "remove tracked credentials"
+```
 
 ## Ejecutar ejemplos
 
