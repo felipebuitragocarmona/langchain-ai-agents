@@ -46,7 +46,7 @@ prompt = ChatPromptTemplate.from_messages([
 agent_chain = prompt | llm.bind_tools(tools)
 
 # 5️⃣ Ejecutar primera vez
-pregunta = "¿Cuánto es 5 por 4 ?"
+pregunta = "¿Cuánto es 5 mas 4 ?"
 print(f"PREGUNTA: {pregunta}\n")
 
 response = agent_chain.invoke({"input": pregunta})

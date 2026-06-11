@@ -61,7 +61,7 @@ prompt = ChatPromptTemplate.from_messages([
 agent_chain = prompt | llm.bind_tools(tools)
 
 # 5️⃣ Ejecutar primera vez
-pregunta = "¿Cómo está el clima en Roma?"
+pregunta = "¿Cómo está el clima en Manizales?"
 print(f"PREGUNTA: {pregunta}\n")
 
 response = agent_chain.invoke({"input": pregunta})

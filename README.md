@@ -63,6 +63,7 @@ Ejemplo extendido (si pruebas más proveedores/herramientas):
 GOOGLE_API_KEY=tu_api_key_aqui
 OPENAI_API_KEY=tu_openai_api_key_opcional
 TAVILY_API_KEY=tu_tavily_api_key_opcional
+GOOGLE_SHEETS_CREDENTIALS_FILE=credenciales/credentials_google_sheet.json
 ```
 
 Nota: no subas tu archivo .env al repositorio.
@@ -98,10 +99,31 @@ git commit -m "remove tracked credentials"
 Desde la raíz del proyecto:
 
 ```bash
+python 1_fundamentos/1_modelosDisponibles.py
+python 1_fundamentos/2_1_primera_prueba.py
 python 1_fundamentos/2_2_hola_mundo.py
-python 1_fundamentos/6_chain_con_memoria.py
-python 1_fundamentos/5_rag_basico.py
 python 1_fundamentos/3_a_agente_calculador.py
+python 1_fundamentos/3_b_agente_busqueda_internet.py
+python 1_fundamentos/3_c_clima.py
+python 1_fundamentos/3_d_google_sheets.py
+python 1_fundamentos/4_respuestas_estructuradas.py
+python 1_fundamentos/5_chain_con_memoria.py
+python 1_fundamentos/6_rag_basico.py
 ```
 
 Si un script requiere variables adicionales, define esas claves en tu archivo .env antes de ejecutarlo.
+
+## Orden de lectura recomendado (Fundamentos)
+
+Sigue este orden para avanzar de lo básico a lo aplicado:
+
+1. 1_fundamentos/1_modelosDisponibles.py
+2. 1_fundamentos/2_1_primera_prueba.py
+3. 1_fundamentos/2_2_hola_mundo.py
+4. 1_fundamentos/3_a_agente_calculador.py
+5. 1_fundamentos/3_b_agente_busqueda_internet.py
+6. 1_fundamentos/3_c_clima.py
+7. 1_fundamentos/3_d_google_sheets.py
+8. 1_fundamentos/4_respuestas_estructuradas.py
+9. 1_fundamentos/5_chain_con_memoria.py
+10. 1_fundamentos/6_rag_basico.py
